@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Header("横操作の移動量")] float _inputSpeed;
 
     /// <summary>PlayerのRigidbody2Dのメンバ変数</summary>
-    Rigidbody2D _rb2D;
+    Rigidbody2D _rb2DP;
 
 
     float x;
@@ -20,7 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        _rb2D = GetComponent<Rigidbody2D>();
+        _rb2DP = GetComponent<Rigidbody2D>();
+
+        
     }
 
     // Update is called once per frame
@@ -46,6 +48,6 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        _rb2D.velocity = new Vector2(_speed, _rb2D.velocity.y); // Playerを移動 Vextor2(x軸スピード、y軸スピード(元のまま))
+        _rb2DP.velocity = new Vector2(_speed, _rb2DP.velocity.y); // Playerを移動 Vextor2(x軸スピード、y軸スピード(元のまま))
     }
 }
