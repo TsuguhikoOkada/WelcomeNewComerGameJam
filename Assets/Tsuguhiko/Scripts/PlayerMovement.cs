@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Header("横操作の移動量")] float _inputSpeed;
 
     /// <summary>PlayerのRigidbody2Dのメンバ変数</summary>
-    Rigidbody2D _rb2D;
+    Rigidbody2D _rb2DP;
 
     /// <summary>弾の発射間隔</summary>
     [SerializeField, Header("弾の発射間隔")] float _bulletInterval = 0.3f;
@@ -33,7 +33,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        _rb2D = GetComponent<Rigidbody2D>();
+        _rb2DP = GetComponent<Rigidbody2D>();
+
+        
+
+        //_rb2D = GetComponent<Rigidbody2D>();
         _pool = new GameObject("PlayerBullet").transform;//弾を保持する空のオブジェクトを生成
     }
 
@@ -61,6 +65,9 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+
+        _rb2DP.velocity = new Vector2(_speed, _rb2DP.velocity.y); // Playerを移動 Vextor2(x軸スピード、y軸スピード(元のまま))
+
         //Speceキーが押されたら
         if (Input.GetButton("Jump") && _timer >= _bulletInterval)
         {
@@ -68,7 +75,8 @@ public class PlayerMovement : MonoBehaviour
             _timer = 0;//タイマーをリセット
         }
 
-        _rb2D.velocity = new Vector2(_speed, _rb2D.velocity.y); // Playerを移動 Vextor2(x軸スピード、y軸スピード(元のまま))
+        
+
     }
 
     void ObjectPool(Vector3 pos, Quaternion qua)
