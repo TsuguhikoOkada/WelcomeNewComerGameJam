@@ -10,7 +10,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
    public void Addscore()
     {
-        score += 50;
+        score += 10;
     }
 
      void Start()
