@@ -64,6 +64,6 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D returnSpotCol)
     {
-        Destroy(this.gameObject);
+        if(returnSpotCol.gameObject == _returnSpotObject) Destroy(this.gameObject);
     }
 }
