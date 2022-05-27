@@ -30,8 +30,6 @@ public class EnemyMovement : MonoBehaviour
     {
         _targetObject = GameObject.Find(_targetName);
 
-        
-
         _rb2DE = GetComponent<Rigidbody2D>();
 
         _rb2DE.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -61,7 +59,11 @@ public class EnemyMovement : MonoBehaviour
         {
             _rb2DE.velocity = new Vector2(vx, vy);
         }
+ 
+    }
 
-        
+    private void OnTriggerEnter2D(Collider2D returnSpotCol)
+    {
+        Destroy(this.gameObject);
     }
 }

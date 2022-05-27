@@ -33,14 +33,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-<<<<<<< HEAD
         _rb2DP = GetComponent<Rigidbody2D>();
 
         
-=======
-        _rb2D = GetComponent<Rigidbody2D>();
+
+        //_rb2D = GetComponent<Rigidbody2D>();
         _pool = new GameObject("PlayerBullet").transform;//弾を保持する空のオブジェクトを生成
->>>>>>> d61dfacb15a6a3ba6796abc3d5fa7186297a30d7
     }
 
     void Update()
@@ -67,9 +65,9 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-<<<<<<< HEAD
+
         _rb2DP.velocity = new Vector2(_speed, _rb2DP.velocity.y); // Playerを移動 Vextor2(x軸スピード、y軸スピード(元のまま))
-=======
+
         //Speceキーが押されたら
         if (Input.GetButton("Jump") && _timer >= _bulletInterval)
         {
@@ -77,8 +75,8 @@ public class PlayerMovement : MonoBehaviour
             _timer = 0;//タイマーをリセット
         }
 
-        _rb2D.velocity = new Vector2(_speed, _rb2D.velocity.y); // Playerを移動 Vextor2(x軸スピード、y軸スピード(元のまま))
->>>>>>> d61dfacb15a6a3ba6796abc3d5fa7186297a30d7
+        
+
     }
 
     void ObjectPool(Vector3 pos, Quaternion qua)
