@@ -44,11 +44,7 @@ public class EnemyMovement : MonoBehaviour
 
     float _vy;
 
-    float _distance = 0;
-
-    [SerializeField] int _count;
-
-    int n;
+    
 
     void Start()
     {
@@ -65,7 +61,7 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         
-        _count = UnityEngine.Random.Range(0, 3);
+        //_count = UnityEngine.Random.Range(0, 3);
         switch (_actionPattern)
         {
             case EnemyActionPattern.Pattern1:
@@ -92,90 +88,7 @@ public class EnemyMovement : MonoBehaviour
                 _vy = _dir.y * _enemySpeed;
                 _rb2DE.velocity = new Vector3(_vx, _vy, 0);
                 break;
-            //case EnemyActionPattern.Pattern5:
-            //    _dir = (_checkPointObjects[4].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern6:
-            //    _dir = (_checkPointObjects[5].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern7:
-            //    _dir = (_checkPointObjects[6].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern8:
-            //    _dir = (_checkPointObjects[7].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern9:
-            //    _dir = (_checkPointObjects[8].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern10:
-            //    _dir = (_checkPointObjects[9].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern11:
-            //    _dir = (_checkPointObjects[10].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern12:
-            //    _dir = (_checkPointObjects[11].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern13:
-            //    _dir = (_checkPointObjects[12].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern14:
-            //    _dir = (_checkPointObjects[13].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern15:
-            //    _dir = (_checkPointObjects[14].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern16:
-            //    _dir = (_checkPointObjects[15].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern17:
-            //    _dir = (_checkPointObjects[16].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
-            //case EnemyActionPattern.Pattern18:
-            //    _dir = (_checkPointObjects[17].transform.position - transform.position).normalized;
-            //    _vx = _dir.x * _enemySpeed;
-            //    _vy = _dir.y * _enemySpeed;
-            //    _rb2DE.velocity = new Vector3(_vx, _vy, 0);
-            //    break;
+            
         }
         
 
