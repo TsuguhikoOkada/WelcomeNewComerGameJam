@@ -14,6 +14,12 @@ public class BulletController : MonoBehaviour
     [SerializeField, Header("EnemyのTag")] string _enemyTag = "Enemy";
 
 
+    /// <summary>PlayerのTag</summary>
+    [SerializeField, Header("PlayerのTag")] string _playerTag = "Player";
+
+    GameObject _bullet;
+
+
     void Start()
     {
         _rb2D = GetComponent<Rigidbody2D>();
@@ -31,6 +37,6 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == _enemyTag) Destroy(collision.gameObject);
+        if (collision.gameObject.tag == _enemyTag || collision.gameObject.tag == _playerTag && gameObject.transform.rotation.z != 0) Destroy(collision.gameObject);
     }
 }
