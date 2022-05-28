@@ -43,7 +43,7 @@ public class GeneratorController : MonoBehaviour
     void Update()
     {
         _timer += Time.deltaTime;
-        Generator(0);
+        Generator(Random.Range(0,_enemy.Count));
         
         
     }

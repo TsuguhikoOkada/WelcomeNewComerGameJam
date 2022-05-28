@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
+    /// <summary>弾のスピード</summary>
     [SerializeField, Header("弾のスピード")] float _speed;
 
     Rigidbody2D _rb2D;
+
+
+    /// <summary>EnemyのTag</summary>
+    [SerializeField, Header("EnemyのTag")] string _enemyTag = "Enemy";
+
 
     void Start()
     {
@@ -20,5 +26,11 @@ public class BulletController : MonoBehaviour
     void OnBecameInvisible()
     {
         gameObject.SetActive(false);
+        
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == _enemyTag) Destroy(collision.gameObject);
     }
 }
