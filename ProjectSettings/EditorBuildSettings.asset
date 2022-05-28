@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/AkiyamaKoki/Slect Stage.unity
     guid: 1137a25a3c09f954f82e1c877d52b64d
   - enabled: 1
-    path: Assets/Tsuguhiko/Scenes/TsuguMain.unity
-    guid: 0c90f7ac1d0a90b4a99aeaacc0412b50
+    path: Assets/Adachi/Scenes/TsuguMain(Clone).unity
+    guid: ebd0871b568b2ee44a0815f6da6ff471
+  - enabled: 1
+    path: "Assets/AkiyamaKoki/Stage\u3000Clear.unity"
+    guid: 55686dccf75dbc9489f701b619e551d1
   m_configObjects: {}

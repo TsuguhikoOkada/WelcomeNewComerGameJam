@@ -198,8 +198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53abe0165db36864a9b2c5118930f4ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneName: "Stage\u3000Clear"
   _playerBulletTag: Bullet
-  _hp: 10
+  _hp: 5
   _speed: 2
   _stopTime: 2
   _moveTime: 0.5
@@ -246,8 +247,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300038, guid: 8d18f6d2b73e89b4882fbf3bb5aedb4b, type: 3}
   m_Color: {r: 1, g: 0, b: 0.8847189, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -267,7 +268,7 @@ Transform:
   m_GameObject: {fileID: 397217628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -285,18 +286,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.000000029802322, y: -0.038817316}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.4, y: 0.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.38744748, y: 0.37263876}
   m_EdgeRadius: 0
 --- !u!1 &1110730148 stripped
 GameObject:
@@ -426,7 +427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480354747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -509,7 +510,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 0.82664216, b: 0, a: 1}
   m_FlipX: 0
@@ -731,6 +732,14 @@ PrefabInstance:
       propertyPath: _muzzle
       value: 
       objectReference: {fileID: 1492676071}
+    - target: {fileID: 3784208222635719244, guid: 1b17aa5f2e1a5d848bb1db232e86a258, type: 3}
+      propertyPath: _bulletInterval
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784208222635719246, guid: 1b17aa5f2e1a5d848bb1db232e86a258, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: c4d8ed7c5adcd0e489c81b34c69fa753, type: 3}
     - target: {fileID: 3784208222635719246, guid: 1b17aa5f2e1a5d848bb1db232e86a258, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -738,6 +747,14 @@ PrefabInstance:
     - target: {fileID: 3784208222635719247, guid: 1b17aa5f2e1a5d848bb1db232e86a258, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784208222635719247, guid: 1b17aa5f2e1a5d848bb1db232e86a258, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784208222635719247, guid: 1b17aa5f2e1a5d848bb1db232e86a258, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 3784208222635719247, guid: 1b17aa5f2e1a5d848bb1db232e86a258, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1116,6 +1133,10 @@ PrefabInstance:
     - target: {fileID: 2767624482688384129, guid: 459f463ac2e8b784f9f24a4fb7251230, type: 3}
       propertyPath: m_Name
       value: GeneratorSpotObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767624482688384129, guid: 459f463ac2e8b784f9f24a4fb7251230, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2767624482688384132, guid: 459f463ac2e8b784f9f24a4fb7251230, type: 3}
       propertyPath: n
