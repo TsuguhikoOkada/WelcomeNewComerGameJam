@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 738894120409807198}
   m_Layer: 0
   m_Name: 0Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,5 +150,3 @@ MonoBehaviour:
   - {fileID: 3475657533109246666, guid: b02e1264530bef845b432204e5cf7961, type: 3}
   - {fileID: 7072860215836017997, guid: 8f4c80ed73bdb13459bea58396c1b408, type: 3}
   _achivementPointObjects: []
-  _enemySpots: []
-  _count: 0
