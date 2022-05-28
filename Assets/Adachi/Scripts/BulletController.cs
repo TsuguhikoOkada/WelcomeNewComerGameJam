@@ -9,8 +9,12 @@ public class BulletController : MonoBehaviour
 
     Rigidbody2D _rb2D;
 
+<<<<<<< HEAD
     /// <summary>EnemyのTag</summary>
     [SerializeField, Header("EnemyのTag")] string _enemyTag = "Enemy";
+=======
+    
+>>>>>>> 1cc92b6d7a6bfebcf719c60288cca51e0b37ca94
 
     void Start()
     {
@@ -24,6 +28,7 @@ public class BulletController : MonoBehaviour
     void OnBecameInvisible()
     {
         gameObject.SetActive(false);
+        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
