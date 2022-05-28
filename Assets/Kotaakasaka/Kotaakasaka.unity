@@ -1125,7 +1125,8 @@ MonoBehaviour:
   - {fileID: 1207122164}
   _eventSystem: {fileID: 1665763353}
   _second: 2
-  _sceneName: TsuguMain
+  _sceneNames:
+  - Slect Stage
 --- !u!82 &1335177720
 AudioSource:
   m_ObjectHideFlags: 0
