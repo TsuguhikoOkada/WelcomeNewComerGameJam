@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3784208222635719245}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 0
   _inputSpeed: 3
+  _bulletInterval: 0.3
+  _playerBullet: {fileID: 9053906690705121516, guid: cb6fbe83604b59c4c8adf5539d00bbac, type: 3}
+  _muzzle: {fileID: 3784208222635719241}
 --- !u!61 &3784208222635719234
 BoxCollider2D:
   m_ObjectHideFlags: 0

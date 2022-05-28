@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Mathf;
 
 /// <summary>Playerの移動に関するスクリプト</summary>
 public class PlayerMovement : MonoBehaviour
@@ -30,12 +31,12 @@ public class PlayerMovement : MonoBehaviour
 
     float x;
 
-
+    Vector2 _playerPos;
     void Start()
     {
         _rb2DP = GetComponent<Rigidbody2D>();
 
-        
+        _rb2DP.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         //_rb2D = GetComponent<Rigidbody2D>();
         _pool = new GameObject("PlayerBullet").transform;//弾を保持する空のオブジェクトを生成
@@ -75,7 +76,11 @@ public class PlayerMovement : MonoBehaviour
             _timer = 0;//タイマーをリセット
         }
 
-        
+        _playerPos = transform.position;
+
+        _playerPos.x = Clamp(_playerPos.x, -2.77f, 2.77f);
+
+        transform.position = new Vector2(_playerPos.x,_playerPos.y);
 
     }
 

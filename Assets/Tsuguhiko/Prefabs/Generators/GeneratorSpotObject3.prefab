@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8375802477425910950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8375802477425910971}
+  - component: {fileID: 8375802477425910948}
+  - component: {fileID: 8375802477425910949}
+  m_Layer: 0
+  m_Name: GeneratorSpotObject3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8375802477425910971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8375802477425910950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.52, y: 5.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8375802477425910948
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8375802477425910950}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &8375802477425910949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8375802477425910950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0ec6596f613da4481adf3b7627b1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _generatorSpotName: GeneratorSpotObject
+  _enemy:
+  - {fileID: 738894120409807195, guid: 206df3e7c06deda48a0bcedcf5cc8495, type: 3}
+  - {fileID: 738894120409807195, guid: 8a8070ba7258eb445ac92ada1328dda6, type: 3}
+  - {fileID: 738894120409807195, guid: 3622b1489bca62745a1d5564c9f08e65, type: 3}
+  - {fileID: 738894120409807195, guid: 5e4d2d382870da2408847eff226e839e, type: 3}
+  - {fileID: 738894120409807195, guid: b046857ea38419c4c8db73b60d2424a2, type: 3}
+  - {fileID: 738894120409807195, guid: c8afdbe2a1f6b8f4aa75d8e6dc283332, type: 3}
+  - {fileID: 738894120409807195, guid: 34e434d3d4cd7b24dbcf50de79240f70, type: 3}
+  - {fileID: 738894120409807195, guid: 77a3e5a4586f62b4d90b40d9275f63f3, type: 3}
+  - {fileID: 738894120409807195, guid: 5e1c1631ed288e1419350b48f9435c7a, type: 3}
+  - {fileID: 738894120409807195, guid: 4ab20316bfc03df459666cc5c5711e4a, type: 3}
+  - {fileID: 738894120409807195, guid: e445f9240a5128743b84420c95ba82a2, type: 3}
+  - {fileID: 738894120409807195, guid: c8cb74b2ea8a4ab44b989ad7747e998c, type: 3}
+  - {fileID: 738894120409807195, guid: 76417ce281558264d94e51bc7f42ff19, type: 3}
+  - {fileID: 738894120409807195, guid: 02bacdece87700749bb97aa0764bca10, type: 3}
+  - {fileID: 738894120409807195, guid: a9de8c4bfc8e4f64297661c6fcbbdb04, type: 3}
+  - {fileID: 738894120409807195, guid: 7edaf6a5fca3c9745a09f6592045f6a5, type: 3}
+  - {fileID: 738894120409807195, guid: 7790073835a0c5e41b9a73eae4906f7c, type: 3}
+  - {fileID: 738894120409807195, guid: 5dae4e67f54f4e24d82dc6e5a15225ef, type: 3}
+  _leftLimitPos: -1
+  _rightLimitPos: 1
+  _miniLimit: 3
+  _maxLimit: 10
+  n: 17
+  _position: {fileID: 8375802477425910971}

@@ -31,6 +31,10 @@ public class GeneratorController : MonoBehaviour
     /// <summary>制限時間（になったらEnemyが生成される）</summary>
     float _timeLimit;
 
+    
+
+    
+
     void Start()
     {
         _generatorSpotObject = GameObject.Find(_generatorSpotName);
@@ -39,7 +43,9 @@ public class GeneratorController : MonoBehaviour
     void Update()
     {
         _timer += Time.deltaTime;
-        Generator(0);        
+        Generator(0);
+        
+        
     }
 
     /// <summary>ランダムな秒数でランダムな位置に敵を生成</summary>
@@ -50,7 +56,7 @@ public class GeneratorController : MonoBehaviour
         if(_timer >= _timeLimit)
         {
             //ランダムな位置に生成
-            Instantiate(_enemy[number], _generatorSpotObject.transform.position - new Vector3(Random.Range(_leftLimitPos,_rightLimitPos), 0f, 0f), Quaternion.identity, _generatorSpotObject.transform);
+            Instantiate(_enemy[number], _generatorSpotObject.transform.position - new Vector3(Random.Range(_leftLimitPos, _rightLimitPos), 0f, 0f), Quaternion.identity, _generatorSpotObject.transform);
             _timer = 0;
             _timeLimit = Random.Range(_miniLimit, _maxLimit);
         }
