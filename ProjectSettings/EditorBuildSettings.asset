@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Kotaakasaka/Kotaakasaka.unity
     guid: 61ec885b1641d7d49bd76dd1a16e230a
   - enabled: 1
+    path: Assets/AkiyamaKoki/Slect Stage.unity
+    guid: 1137a25a3c09f954f82e1c877d52b64d
+  - enabled: 1
     path: Assets/Tsuguhiko/Scenes/TsuguMain.unity
     guid: 0c90f7ac1d0a90b4a99aeaacc0412b50
   m_configObjects: {}
