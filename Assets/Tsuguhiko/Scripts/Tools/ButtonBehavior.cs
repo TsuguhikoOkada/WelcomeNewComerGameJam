@@ -30,6 +30,22 @@ public class ButtonBehavior : MonoBehaviour
         _wfs = new WaitForSeconds(_second);
     }
 
+    public void TitleScene()
+    {
+        StartCoroutine(Title());
+    }
+
+    IEnumerator Title()
+    {
+        _eventSystem.enabled = false;
+
+        yield return _wfs;
+
+        SceneManager.LoadScene(_sceneNames[1]);
+
+        _eventSystem.enabled = true;
+    }
+
     public void LoadScene()
     {
         StartCoroutine(StandByTime());
@@ -48,7 +64,7 @@ public class ButtonBehavior : MonoBehaviour
 
     public void ExitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+       // UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 

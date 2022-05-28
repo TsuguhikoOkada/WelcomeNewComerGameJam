@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossMovement : MonoBehaviour
 {
+    [SerializeField] string _sceneName;
+
     Rigidbody2D _rb2D;
     /// <summary>水平、横方向</summary>
     float _horizontal = 0f;
@@ -98,6 +101,7 @@ public class BossMovement : MonoBehaviour
             if (_hp <= 0)
             {
                 Destroy(gameObject);
+                SceneManager.LoadScene(_sceneName);
             }
         }
     }
