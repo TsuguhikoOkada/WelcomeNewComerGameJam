@@ -19,7 +19,7 @@ public class ButtonBehavior : MonoBehaviour
     [SerializeField, Header("シーン切り換え待機時間")] float _second;
 
     /// <summary>移動させるシーン名を設定するメンバ変数</summary>
-    [SerializeField, Header("遷移シーン名")] string _sceneName;
+    [SerializeField, Header("遷移シーン名")] string[]  _sceneNames;
 
     /// <summary>WaitforSecondsのメンバ変数</summary>
     WaitForSeconds _wfs;
@@ -41,7 +41,7 @@ public class ButtonBehavior : MonoBehaviour
 
         yield return _wfs;
 
-        SceneManager.LoadScene(_sceneName);
+        SceneManager.LoadScene(_sceneNames[0]);
 
         _eventSystem.enabled = true;
     }
@@ -50,5 +50,31 @@ public class ButtonBehavior : MonoBehaviour
     {
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
+    }
+
+    public void Battle()
+    {
+        StartCoroutine(StandByBattle());
+    }
+
+    IEnumerator StandByBattle()
+    {
+        _eventSystem.enabled = false;
+
+        yield return new WaitForSeconds(1);
+
+       
+        yield return new WaitForSeconds(1);
+
+
+        yield return new WaitForSeconds(1);
+
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(_sceneNames[1]);
+
+        _eventSystem.enabled = false;
+
     }
 }
