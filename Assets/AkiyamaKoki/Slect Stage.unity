@@ -468,7 +468,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30B9\u30C6\u30FC\u30B8\uFF12"
+  m_Text: Stage2
 --- !u!222 &121016567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -668,7 +668,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30B9\u30C6\u30FC\u30B8\uFF13"
+  m_Text: Stage3
 --- !u!222 &306959305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -888,7 +888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30B9\u30C6\u30FC\u30B81"
+  m_Text: Stage1
 --- !u!222 &835717821
 CanvasRenderer:
   m_ObjectHideFlags: 0
