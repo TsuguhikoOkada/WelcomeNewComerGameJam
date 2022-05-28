@@ -11,6 +11,9 @@ public class BossMovement : MonoBehaviour
     float _veritical = 0f;
     /// <summary>方向</summary>
     Vector2 _dir;
+    [SerializeField, Header("Playerの弾のTag")] string _playerBulletTag = "Bullet";
+    /// <summary>体力</summary>
+    [SerializeField, Header("体力")] int _hp = 10;
     /// <summary>移動スピード</summary>
     [SerializeField, Header("移動スピード")] float _speed = 2f;
     /// <summary>停止時間</summary>
@@ -83,6 +86,19 @@ public class BossMovement : MonoBehaviour
             //一定時間移動する
             _rb2D.velocity = _dir.normalized * _speed;
             yield return new WaitForSeconds(_moveTime);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == _playerBulletTag)
+        {
+            collision.gameObject.SetActive(false);
+            _hp--;
+            if (_hp <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
