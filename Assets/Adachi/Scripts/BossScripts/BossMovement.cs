@@ -43,7 +43,7 @@ public class BossMovement : MonoBehaviour
 
     IEnumerator RandomMovement()
     {
-        Debug.Log("OK");
+        //Debug.Log("OK");
         while (true)
         {
             //一定時間止まる
