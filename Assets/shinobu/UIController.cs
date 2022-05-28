@@ -13,6 +13,11 @@ public class UIController : MonoBehaviour
         score += 10;
     }
 
+    public void DecreaseScore()
+    {
+        score -= 10;
+    }
+
      void Start()
     {
         score = 0;
