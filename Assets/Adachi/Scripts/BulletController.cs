@@ -8,6 +8,8 @@ public class BulletController : MonoBehaviour
 
     Rigidbody2D _rb2D;
 
+    
+
     void Start()
     {
         _rb2D = GetComponent<Rigidbody2D>();
@@ -20,5 +22,6 @@ public class BulletController : MonoBehaviour
     void OnBecameInvisible()
     {
         gameObject.SetActive(false);
+        
     }
 }
